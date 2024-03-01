@@ -11,7 +11,7 @@ const Contact = () => {
               Best In City
             </h1>
             <h2 data-aos="fade-up" className="text-3xl sm:text-4xl font-bold">
-              Trusted Car Servies In Egypt
+              Trusted Cab Servies In Egypt
             </h2>
             <p data-aos="fade-up" className="leading-8 tracking-wide">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
@@ -28,7 +28,7 @@ const Contact = () => {
 
           <div className="w-full md:max-w-[350] mx-auto">
             <h2 className="uppercase text-2xl  text-white bg-black px-5 py-3">
-              Book A Car
+              Book A Cab
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-2 bg-white p-5">
               <input

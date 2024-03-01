@@ -6,6 +6,7 @@ import bgCity from "../../assets/bgCity.jpg";
 import AOS from "aos";
 import Image from "next/image";
 
+
 const bgStyle = {
   backgroundImage: `url(${bgCity.src})`,
   backgroundSize: "cover",
@@ -16,7 +17,7 @@ const bgStyle = {
 };
 
 const Hero = () => {
-  return (
+  return (    
     <div style={bgStyle}>
       <div className="dark:bg-black/60  bg-white/20 backdrop-blur-sm dark:text-white duration-300 h-[520px] flex">
         <div className="container grid grid-cols-1 place-items-center">
@@ -26,7 +27,7 @@ const Hero = () => {
               data-aos="fade-up"
               className="dark:text-primary text-3xl font-semibold uppercase text-orange "
             >
-              Book Car Now
+              Book Cab Now
             </p>
             <h1
               data-aos="fade-up"
@@ -37,7 +38,7 @@ const Hero = () => {
             </h1>
             <p
               data-aos="fade-up"
-              data-aos-delay="1000"
+              data-aos-delay="800"
               className="tracking-[8px] text-base sm:text-xl font-semibold"
             >
               www.yourdomain.com

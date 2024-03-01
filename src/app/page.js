@@ -5,8 +5,13 @@ import 'aos/dist/aos.css';
 import Navbar from '@/components/Navbar/Navbar';
 import Hero from '@/components/Hero/Hero';
 import Contact from '@/components/Contact/Contact';
+import BestCars from '@/components/BestCars/BestCars';
+import About from '@/components/About/About';
+import Testimonials from '@/components/Testimonials/Testimonials';
+import AppStore from './../components/AppStore/AppStore';
 
 
+AppStore
 const Page = () => {
   useEffect(() => {
     AOS.init({
@@ -19,9 +24,13 @@ const Page = () => {
   }, []);
   return (
     <div className='dark:bg-black dark:text-white'>
-      <Navbar/>
+      {/* <Navbar/> */}
       <Hero/>
       <Contact/>
+      <BestCars/>
+      <About/>
+      <AppStore/>
+      <Testimonials/>
       
     </div>  
   )
