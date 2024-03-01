@@ -20,7 +20,7 @@ const About = () => {
         <div className="container">
           {/**Header title section */}
           <div className="space-y-3 uppercase text-center">
-            <p className="text-primary text-2xl font-semibold">We Do Best</p>
+            <p data-aos="fade-up" className= "text-primary text-2xl font-semibold">We Do Best</p>
             <h1
               data-aos="fade-up"
               data-aos-delay="300"
@@ -30,7 +30,7 @@ const About = () => {
             </h1>
           </div>
           {/**Card Section */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div data-aos="fade-up" className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <div className="space-y-8">
               <BannerCard
                 title={"fast Booking"}
