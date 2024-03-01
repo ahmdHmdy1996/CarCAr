@@ -1,34 +1,42 @@
-"use client"
+"use client";
 import Link from "next/link";
 import React, { useState } from "react";
 import DarkmMode from "./DarkmMode";
 import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
 import ResponsiveMenu from "./ResponsiveMenu";
+import { usePathname } from "next/navigation";
 
 export const Navlinks = [
   {
     id: 1,
-    name: "HOME",
+    name: "Home",
     link: "/#",
   },
   {
     id: 2,
-    name: "CARS",
-    link: "/#cars",
+    name: "About",
+    link: "/about",
   },
   {
-    id: 1,
-    name: "ABOUT",
-    link: "/#about",
+    id: 3,
+    name: "Features",
+    link: "/features",
   },
   {
-    id: 1,
-    name: "BOOKING",
-    link: "/#booking",
+    id: 4,
+    name: "Blog",
+    link: "/blog",
   },
+  {
+    id: 5,
+    name: "Contact",
+    link: "/contact",
+  },
+  
 ];
 
 const Navbar = () => {
+  const pathname = usePathname();
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
@@ -48,16 +56,19 @@ const Navbar = () => {
           {/* desktop menu Section */}
           <nav className="hidden md:block">
             <ul className="flex items-center gap-8">
-              {Navlinks.map(({ id, name, link }) => (
-                <li key={id} className="py-4">
-                  <Link
-                    href={link}
-                    className=" text-lg font-medium text-black dark:text-white py-2 px-4 rounded-full hover:bg-primary dration-300"
-                  >
-                    {name}
-                  </Link>
-                </li>
-              ))}
+              {Navlinks.map(({ id, name, link }) => {
+                const isActive = pathname === link;
+                return (
+                  <li key={id} className="py-4">
+                    <Link
+                      href={link}
+                      className={`${isActive ? "bg-priamry dark:text-black":""} text-lg font-medium text-black dark:text-white py-2 px-4 rounded-full hover:bg-primary dration-300`}
+                    >
+                      {name}
+                    </Link>
+                  </li>
+                );
+              })}
               {/* DarkMode feature implement */}
               <DarkmMode />
             </ul>
