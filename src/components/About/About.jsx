@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import BgImage from "../../assets/street.jpg";
+import BgImage from "https://raw.githubusercontent.com/ahmdHmdy1996/CarCAr/main/src/assets/Street.jpg";
 import BannerCard from "./BannerCard";
 import { SlStar } from "react-icons/sl";
 

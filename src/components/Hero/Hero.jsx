@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import carPng from "../../assets/car.png";
-import yellowCar from "../../assets/yellowCar.png";
+import yellowCar from "https://raw.githubusercontent.com/ahmdHmdy1996/CarCAr/main/src/assets/yellowcar.png";
 import bgCity from "../../assets/bgCity.jpg";
 import AOS from "aos";
 import Image from "next/image";
